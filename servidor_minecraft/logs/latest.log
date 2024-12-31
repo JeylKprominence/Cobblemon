@@ -1,0 +1,155 @@
+[31Dec2024 07:10:05.902] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.7, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[31Dec2024 07:10:05.936] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.5 by Microsoft; OS Linux arch amd64 version 6.5.0-1025-azure
+[31Dec2024 07:10:07.295] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[31Dec2024 07:10:07.371] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/Cobblemon/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[31Dec2024 07:10:07.877] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Cobblemon/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.7/fmlcore-1.20.1-47.3.7.jar is missing mods.toml file
+[31Dec2024 07:10:07.880] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Cobblemon/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.7/javafmllanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[31Dec2024 07:10:07.884] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Cobblemon/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.7/lowcodelanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[31Dec2024 07:10:07.887] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Cobblemon/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.7/mclanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[31Dec2024 07:10:08.171] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 7 dependencies adding them to mods collection
+[31Dec2024 07:10:12.703] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[31Dec2024 07:10:12.759] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[31Dec2024 07:10:13.117] [main/INFO] [Embeddium/]: Loaded configuration file for Embeddium: 64 options available, 3 override(s) found
+[31Dec2024 07:10:13.205] [main/WARN] [mixin/]: Reference map 'online-emotes-forge-refmap.json' for online-emotes.mixins.json could not be read. If this is a development environment you can ignore this message
+[31Dec2024 07:10:14.182] [main/WARN] [mixin/]: Error loading class: juuxel/adorn/block/variant/BlockVariantSets (java.lang.ClassNotFoundException: juuxel.adorn.block.variant.BlockVariantSets)
+[31Dec2024 07:10:14.183] [main/WARN] [mixin/]: @Mixin target juuxel.adorn.block.variant.BlockVariantSets was not found mixins.cobblemon-common.json:invoker.AdornRegisterInvoker
+[31Dec2024 07:10:14.906] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[31Dec2024 07:10:25.841] [main/ERROR] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Error occurred applying transform of coremod coremods/field_to_method.js function biome
+java.lang.IllegalStateException: Field f_47437_ is not private and an instance field
+	at net.minecraftforge.coremod.api.ASMAPI.redirectFieldToMethod(ASMAPI.java:270) ~[coremods-5.1.6.jar%2354!/:?]
+	at org.openjdk.nashorn.internal.scripts.Script$Recompilation$34$292A$\^eval\_.initializeCoreMod#transformer(<eval>:11) ~[?:?]
+	at org.openjdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:648) ~[nashorn-core-15.3.jar%2366!/:?]
+	at org.openjdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:513) ~[nashorn-core-15.3.jar%2366!/:?]
+	at org.openjdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:520) ~[nashorn-core-15.3.jar%2366!/:?]
+	at org.openjdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:111) ~[nashorn-core-15.3.jar%2366!/:?]
+	at net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:22) ~[coremods-5.1.6.jar%2354!/:5.1.6]
+	at net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:22) ~[coremods-5.1.6.jar%2354!/:?]
+	at net.minecraftforge.coremod.transformer.CoreModClassTransformer.runCoremod(CoreModClassTransformer.java:14) ~[coremods-5.1.6.jar%2354!/:?]
+	at net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:42) ~[coremods-5.1.6.jar%2354!/:?]
+	at cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:41) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:179) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:117) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at net.minecraft.world.level.biome.FixedBiomeSource.<clinit>(FixedBiomeSource.java:17) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.world.level.biome.BiomeSources.m_220586_(BiomeSources.java:8) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.m_258029_(BuiltInRegistries.java:448) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.m_258037_(BuiltInRegistries.java:462) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[?:?]
+	at net.minecraft.core.registries.BuiltInRegistries.m_257453_(BuiltInRegistries.java:461) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.core.registries.BuiltInRegistries.m_257498_(BuiltInRegistries.java:455) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:55) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at net.minecraft.server.Main.main(Main.java:121) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[31Dec2024 07:10:26.483] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:pufferfish_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.496] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:salmon_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.497] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:cod_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.497] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tropical_fish_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.497] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:axolotl_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.498] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:powder_snow_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.498] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tadpole_bucket is now minecraft:bucket.
+[31Dec2024 07:10:26.654] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.7, for MC 1.20.1 with MCP 20230612.114412
+[31Dec2024 07:10:26.655] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.7 Initialized
+[31Dec2024 07:10:27.293] [modloading-worker-0/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER
+[31Dec2024 07:10:27.300] [modloading-worker-0/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: oculus, class net.irisshaders.iris.Iris
+java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER
+	at net.minecraftforge.fml.loading.RuntimeDistCleaner.processClassWithFlags(RuntimeDistCleaner.java:57) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:1.0]
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?]
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3549) ~[?:?]
+	at java.lang.Class.getConstructor0(Class.java:3754) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2930) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:70) ~[javafmllanguage-1.20.1-47.3.7.jar%23135!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:124) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+[31Dec2024 07:10:27.330] [modloading-worker-0/INFO] [thedarkcolour.kotlinforforge.test.KotlinForForge/]: Kotlin For Forge Enabled!
+[31Dec2024 07:10:27.333] [modloading-worker-0/ERROR] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Failed to create mod instance. ModID: online_emotes, class com.github.dima_dencep.mods.online_emotes.forge.ForgeOnlineEmotes
+java.lang.NoClassDefFoundError: net/minecraft/client/gui/components/toasts/Toast
+	at java.lang.Class.getDeclaredConstructors0(Native Method) ~[?:?]
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:3549) ~[?:?]
+	at java.lang.Class.getConstructor0(Class.java:3754) ~[?:?]
+	at java.lang.Class.getDeclaredConstructor(Class.java:2930) ~[?:?]
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:70) ~[javafmllanguage-1.20.1-47.3.7.jar%23135!/:?]
+	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:124) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.gui.components.toasts.Toast
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:141) ~[securejarhandler-2.1.10.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 13 more
+[31Dec2024 07:10:27.427] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Booting LaxPermissionValidator, permissions will be checked using Minecrafts permission level system, see https://minecraft.fandom.com/wiki/Permission_level
+[31Dec2024 07:10:27.441] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Launching Cobblemon 1.5.2 
+[31Dec2024 07:10:27.443] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Booting ForgePermissionApiPermissionValidator, player permissions will be checked using MinecraftForge' PermissionAPI, non player command sources will use Minecraft' permission level system, see https://docs.minecraftforge.net/en/latest/ and https://minecraft.fandom.com/wiki/Permission_level
+[31Dec2024 07:10:27.791] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Starting the Best Spawner...
+[31Dec2024 07:10:27.797] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Loaded 5 spawning condition types.
+[31Dec2024 07:10:27.816] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Loaded 5 spawning context types.
+[31Dec2024 07:10:27.819] [modloading-worker-0/INFO] [com.cobblemon.mod.common.Cobblemon/]: Loaded 1 spawn detail types.
+[31Dec2024 07:10:28.586] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: Failed to complete lifecycle event CONSTRUCT, 2 errors found
+[31Dec2024 07:10:28.694] [main/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID ab4b490c-7ea2-461e-ad7c-11463951748b
+[31Dec2024 07:10:28.695] [main/FATAL] [net.minecraftforge.server.loading.ServerModLoader/]: Crash report saved to ./crash-reports/crash-2024-12-31_07.10.28-fml.txt
+[31Dec2024 07:10:28.707] [main/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID b0e321c5-716f-4d92-b0cd-d7fe1220ef4c
+[31Dec2024 07:10:28.722] [main/ERROR] [net.minecraft.server.Main/FATAL]: Failed to start the minecraft server
+net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	Oculus (oculus) has failed to load correctly
+§7java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER,
+	Online Emotes (online_emotes) has failed to load correctly
+§7java.lang.NoClassDefFoundError: net/minecraft/client/gui/components/toasts/Toast
+]
+	at net.minecraftforge.fml.ModLoader.waitForTransition(ModLoader.java:246) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at net.minecraftforge.fml.ModLoader.lambda$dispatchAndHandleError$20(ModLoader.java:210) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at java.util.Optional.ifPresent(Optional.java:178) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.dispatchAndHandleError(ModLoader.java:210) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at net.minecraftforge.fml.ModLoader.lambda$gatherAndInitializeMods$13(ModLoader.java:183) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:183) ~[fmlcore-1.20.1-47.3.7.jar%23134!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:30) ~[forge-1.20.1-47.3.7-universal.jar%23138!/:?]
+	at net.minecraft.server.Main.main(Main.java:125) ~[server-1.20.1-20230612.114412-srg.jar%23133!/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.7.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
